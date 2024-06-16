@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+    padding: 0.2rem 4rem;
+    background-color: gray;
+}
+nav>a{
+    text-decoration: none;
+}
+nav>.left{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+}
+nav>.right{
+    padding: 0.4rem 1.5rem;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.6rem;
+    border: 2px solid black;
+}
+nav>.right:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.second{
+    padding: 2rem 0rem;
+    background-color: rgb(225, 222, 222);
+}
+
+.second>.heading{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: yellow; */
+    align-items: center;
+    
+    
+}
+.second>.heading>.input
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}.second>.heading>.input>input{
+    font-size: 1.4rem;
+    padding: 0.3rem 1rem;
+    border-radius: 0.8rem;
+    border: 2px solid blue;
+}
+.second>.heading>.input>button{
+    padding: 0.8rem 2rem;
+    border-radius: 0.8rem;
+}
+.second>.heading>.input>button:hover{
+    cursor: pointer;
+}
+
+.content{
+    position: relative;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+}
+.card>.left>.name{
+    width: 15rem;
+}
+.card>.left{
+    display: flex;
+    gap: 1.5rem;
+}
+.moreInfo{
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+
+}
+.moreInfo:hover{
+    cursor: pointer;
+}
+.details{
+    /* background-color: red; */
+    position: relative;
+    /* top: 0; */
+    /* left: 0; */
+    display: flex;
+    width: 100%;
+    gap: 15rem;
+    padding: 3rem 8rem;
+    /* height: 30rem; */
+    justify-content: center;
+    align-items: center;
+}
+.details>img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+}
+.details>.detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.details>.detail>h1{
+    font-size: 2rem;
+}
+.details>.detail>div{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.closeButton{
+    position: absolute;
+    top: 2rem;
+    right: 8rem;
+    padding: 0.5rem 1.5rem;
+}
+.closeButton:hover{
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    background-color: gray;
+}
+
+footer>a>i{
+    font-size: 2rem;
+}

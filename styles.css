@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(197, 191, 191);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+    padding: 0.2rem 4rem;
+    background-color: gray;
+}
+nav>a{
+    text-decoration: none;
+}
+nav>.left{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+}
+nav>.right{
+    padding: 0.4rem 1.5rem;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.6rem;
+    border: 2px solid black;
+}
+nav>.right:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.second{
+    width: 100%;
+    display: flex;
+    padding: 3rem 1rem;
+}
+.second>.left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    /* background-color: yellow; */
+}
+.second>.left>h2{
+    font-size: 3rem;
+}
+.second>.left>p{
+    font-size: 1.5rem;
+}
+.second>.right{
+    width: 50%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* background-color: yellow; */
+}
+.second>.right>img{
+    width: 30rem;    
+}
+
+.third{
+    text-align: center;
+    margin: 3rem 0rem;    
+}
+.third>.top{
+    margin-bottom: 4rem;
+    font-size: 2.5rem;
+}
+.third>.coins_container{
+    display: flex;
+    gap: 2.5rem;
+    /* background-color: red; */
+    height: 5rem;
+    animation: card 20s linear infinite;
+    overflow: hidden;
+    background-color: rgb(180, 179, 179);
+}
+@keyframes card {
+    0%{
+        transform: translateX(-10rem);
+    }
+    /* 50%{
+        transform: translateX(10rem);
+    } */
+    100%{
+        transform: translateX(10rem);
+    }
+}
+.third>.coins_container>.card{
+    width: 15rem;
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 1.5rem;
+    align-items: center;
+    /* background-color: yellow; */
+}
+.third>.coins_container>.card>img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+.third>.coins_container>.card>div{
+    display: flex;
+    flex-direction: column;
+}
+.third>.coins_container>.card>div>h1{
+    font-size: 1.3rem;
+}
+
+.third>.coins_container>.card>div>p{
+    font-size: 1rem;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    background-color: gray;
+}
+
+footer>a>i{
+    font-size: 2rem;
+}
